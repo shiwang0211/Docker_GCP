@@ -1,4 +1,9 @@
 import os
+import sys
+print(sys.path)
+import _ctypes
+import ctypes
+import numpy
 from flask import Flask
 from flask import jsonify
 from serve import *

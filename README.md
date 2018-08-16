@@ -9,7 +9,7 @@ The notebook includes the following sections
   - Text sentiment analysis with model trained on yelp reviews
 - Create a docker container for the application
 - Deploy on VM instance (with container) on Google Cloud Platform
-- Link to the app (may not be available all time): [Link to app](35.196.91.122)
+- Link to the app (may not be available all time): [Link to app](http://35.196.91.122)
 
 ## GCP Components.ipynb
 Examples to utilize services on GCP

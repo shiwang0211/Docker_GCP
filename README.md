@@ -1,11 +1,12 @@
 # GCP_App
-Some practice on Google Cloud Platform (GCP) 
+This repo contains some practices on Google Cloud Platform (GCP) 
 
 ## GCP_App.ipynb
 Develop a REST API on Google Cloud Platform (Ongoing...)
+Goal: an API providing a simple ML service
 
 ## Docker Learn.ipynb
-Examples to build docker images, create containers, etc.
+Practice with examples to build docker images, create containers, push to remote, etc.
 
 ## GCP Components.ipynb
 Examples to utilize services on GCP
@@ -21,5 +22,5 @@ Examples to utilize services on GCP
 
 ## Jupyter_GCP.ipynb
 - Initiate a GPU-enabled instance on GCP
-- Run jupyter notebook on the instance
+- Run jupyter notebook remotely on the instance
 

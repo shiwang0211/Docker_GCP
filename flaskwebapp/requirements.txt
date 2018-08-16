@@ -1,6 +1,9 @@
 Flask==0.12.2
 flask-wtf
+matplotlib
 keras
 tensorflow
 numpy
 pandas
+spacy
+gensim

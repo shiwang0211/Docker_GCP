@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Welcome to My API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src = "{{ url_for('static', filename = 'hello.js') }}"></script>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap-min.css')}}">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='jumbotron-narrow.css')}}">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+
+<body>
+	<div class = "container">
+		<div class="header">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li role = "presentation" class = "active"><a href="/">Home</a>
+				</ul>
+			</nav>
+			<h3 class="text-muted">ML applications</h3>
+		</div>
+
+        <div class="row marketing">
+			<div class="col-lg-6">
+				<h4> Image Classification</h4>
+				<p>A CNN model to classify hand-written digits. The example is adapted from tutorials on tensorflow official site. Network includes convolutional layer, Maxpooling layer, Dropout layer and Dense layer. The model is implemented with Keras. </p>
+			</div>
+            
+            <div class="col-lg-6">
+				<h4> Sentiment Analysis</h4>
+				<p>A LSTM model to predict the rating based on comment texts. The model is built based on some yelp review datasets. The NLP workflow includes preprocessing (tokenization lemmatization and stop word removal), phrase modeling and lstm model implemented with Keras. </p>
+			</div>
+		</div>
+        
+
+			<h3>Services</h3>
+			<p class="lead"></p>
+			<p><a class="btn btn-sm btn-success" href="{{ url_for('mnist') }}"
+				   role="button"> Image Classification</a></p>
+			<p><a class="btn btn-sm btn-success" href="{{ url_for('sentiment') }}"
+				   role="button"> Sentiment Analysis</a></p>
+
+        
+        <div class="row marketing">
+			<div class="col-lg-6">
+                {% block body %}
+                {% endblock %}
+                
+                {% for message in get_flashed_messages() %}
+                    <div class=flash><font color="red">{{ message }}</font></div>
+                {% endfor %}
+			</div>
+            
+			<div class="col-lg-6">
+				<h4>Contact</h4>
+                <a href="https://github.com/shiwang0211">https://github.com/shiwang0211</a>
+				<p>shiwang0211@gmail.com</p>
+			</div>
+		</div>
+
+		<footer class="footer" >
+			<p>&copy; Shi Wang 2018</p>
+		</footer>
+
+
+	</div>
+</body>
+</html>

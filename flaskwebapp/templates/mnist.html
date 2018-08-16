@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block body %}
+
+<p>You can click to change a set of random numbers</p>
+    <form action="{{ url_for('submit_number') }}" method=post class=add-entry>
+      <dl>
+        <dd><input type=submit value=Change>
+      </dl>
+    </form>
+    
+<img src={{ url }} alt="Chart" height="150" width="150">
+
+{% endblock %}
